@@ -1,0 +1,18 @@
+.detail {
+    max-width: 490px;
+    margin: 30px auto 0 auto;
+    border: 1px solid lightgray;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 46px;
+    h1 {
+        font-weight: bold;
+        font-size: 34px;
+    }
+    p {
+        line-height: 32px;
+        font-size: 16px;
+    }
+}

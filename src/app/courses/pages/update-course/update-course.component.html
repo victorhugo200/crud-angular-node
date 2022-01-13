@@ -1,0 +1,33 @@
+<mat-card class="card">
+    <h1>Atualizar curso</h1>
+    <form action="" [formGroup]="form" (ngSubmit)="submit()">
+        <mat-form-field appearance="standard">
+            <mat-label>Nome do curso</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="name">
+            <mat-icon matSuffix color="primary">keyboard</mat-icon>
+            <mat-error *ngIf="form.get('name')?.errors?.required && form.get('name')?.touched ">Este campo é obrigatório</mat-error>
+            <mat-error *ngIf="form.get('name')?.errors?.minlength && form.get('name')?.touched ">Este campo tem que ter no minímo 4 caracteres</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="standard">
+            <mat-label>Categoria</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="category">
+            <mat-icon matSuffix color="primary">category</mat-icon>
+            <mat-error *ngIf="form.get('category')?.errors?.required && form.get('category')?.touched ">Este campo é obrigatório</mat-error>
+            <mat-error *ngIf="form.get('category')?.errors?.minlength && form.get('category')?.touched ">Este campo tem que ter no minímo 4 caracteres</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Descrição do curso</mat-label>
+            <textarea matInput formControlName="description" cols="5" rows="5" style="height: auto; resize: none;"></textarea>
+            <mat-error *ngIf="form.get('description')?.errors?.required && form.get('description')?.touched">
+                Este campo é obrigatório
+            </mat-error>
+            <mat-error *ngIf="form.get('description')?.errors?.minlength &&  form.get('description')?.touched">Este campo tem que ter no minímo 5 caracteres</mat-error>
+            <mat-error *ngIf="form.get('description')?.errors?.maxlength &&  form.get('description')?.touched">Este campo tem que ter no minímo caracteres</mat-error>
+        </mat-form-field>
+        <div class="container-buttons">
+            <button mat-flat-button [routerLink]="['']">Voltar </button>
+            <button type="submit" mat-raised-button color="primary">Alterar dados</button>
+        </div>
+    </form>
+</mat-card>

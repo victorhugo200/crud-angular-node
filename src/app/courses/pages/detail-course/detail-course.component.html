@@ -1,0 +1,7 @@
+<mat-card class="detail">
+    <h1>{{ detail.title }} - {{ detail.category | uppercase}}</h1>
+    <div class="detail-content">
+        <p>Descrição: {{ detail.description }}</p>
+    </div>
+    <button mat-flat-button [routerLink]="['']" color="primary">Voltar para lista de cursos</button>
+</mat-card>

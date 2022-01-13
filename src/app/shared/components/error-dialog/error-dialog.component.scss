@@ -1,0 +1,14 @@
+::ng-deep .mat-dialog-container {
+    position: relative;
+    overflow: unset;
+    width: 300px;
+}
+
+button {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    font-size: 18px;
+    color: #2e2e2ed1;
+    border: none;
+}

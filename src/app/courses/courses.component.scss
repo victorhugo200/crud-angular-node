@@ -1,0 +1,39 @@
+.container-table {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    th {
+        text-align: center;
+    }
+    td {
+        height: 48px;
+        text-align: center;
+    }
+    .category {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            margin-right: 6px;
+        }
+        .icon {
+            color: #585858;
+        }
+    }
+    .actions {
+        button {
+            &:nth-child(2) {
+                margin: 0 20px;
+            }
+        }
+    }
+}
+
+.loading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
