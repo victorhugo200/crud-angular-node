@@ -1,7 +1,25 @@
-<mat-card class="detail">
-    <h1>{{ detail.title }} - {{ detail.category | uppercase}}</h1>
-    <div class="detail-content">
-        <p>Descrição: {{ detail.description }}</p>
-    </div>
-    <button mat-flat-button [routerLink]="['']" color="primary">Voltar para lista de cursos</button>
-</mat-card>
+<div class="detalhes" style="width: 100%; height: 100%;">
+
+    <mat-card class="detail">
+        <div *ngIf="loading" class="loading">
+            <crud-loading></crud-loading>
+        </div>
+
+        <div *ngIf="!loading && !hasError" class="detail-template">
+            <h1>Curso: {{ detail.title }} </h1>
+            <h2>Categoria: {{ detail.category | uppercase}} </h2>
+            <div class="detail-content">
+                <p>Descrição: {{ detail.description }}</p>
+            </div>
+            <button mat-flat-button [routerLink]="['']" color="primary">Voltar para lista de cursos</button>
+        </div>
+
+
+        <div class="error" *ngIf="!loading && hasError">
+            <crud-template-error [title]="feedbackError.title" [text]="feedbackError.text"></crud-template-error>
+            <button mat-flat-button [routerLink]="['']" class="btn-error" color="primary">Voltar para lista de cursos</button>
+        </div>
+
+
+    </mat-card>
+</div>

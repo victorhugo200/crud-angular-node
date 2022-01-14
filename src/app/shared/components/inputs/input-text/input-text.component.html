@@ -1,0 +1,9 @@
+<mat-form-field appearance="fill" [formGroup]="form">
+    <mat-label>{{ label }}</mat-label>
+    <input matInput placeholder="Placeholder" [formControlName]="controlName">
+    <mat-icon matSuffix color="primary">{{ icon }}</mat-icon>
+    <mat-error *ngIf="validarCampo.hasErrorValidator(formControl, 'required')">Este campo é obrigatório</mat-error>
+    <mat-error *ngIf="validarCampo.hasErrorValidator(formControl, 'minlength')">
+        Este campo precisa ter no mínimo {{ validarCampo.lengthValidar(formControl, 'minlength')}} caracteres </mat-error>
+
+</mat-form-field>

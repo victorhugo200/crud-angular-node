@@ -1,0 +1,7 @@
+<mat-form-field appearance="fill" [formGroup]="form">
+    <mat-label>{{ label }}</mat-label>
+    <mat-select [formControlName]="controlName">
+        <mat-option *ngFor="let item of listValue" [value]="item">{{ item }}</mat-option>
+    </mat-select>
+    <mat-error *ngIf="validarCampo.hasErrorValidator(formControl, 'required')">Este campo é obrigatório</mat-error>
+</mat-form-field>

@@ -24,7 +24,7 @@ export class UpdateCourseComponent implements OnInit {
     this.form = this.fb.group({
       name: ['', [Validators.required, Validators.minLength(3)]],
       category: ['', [Validators.required, Validators.minLength(3)]],
-      description: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(250)]]
+      description: ['', [Validators.required, Validators.minLength(30), Validators.maxLength(250)]]
     })
     this.setValueControl('name', this.data.title);
     this.setValueControl('category', this.data.category);

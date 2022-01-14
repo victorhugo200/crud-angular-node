@@ -14,9 +14,7 @@ const routes: Routes = [
   {
     path: 'detail/:id',
     component: DetailCourseComponent,
-    resolve: {
-      data: DetailCourseResolver
-    }
+   
   },
   {
     path: 'update-course/:id',

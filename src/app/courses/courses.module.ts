@@ -1,8 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { AppMaterialModule } from '../shared/app-material/app-material.module';
+
+
 import { SharedModule } from '../shared/shared.module';
 import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses.component';
@@ -17,9 +20,11 @@ import { UpdateCourseModule } from './pages/update-course/update-course.module';
     AppMaterialModule,
     CoursesRoutingModule,
     SharedModule,
+    ReactiveFormsModule,
     RouterModule,
     DetailCourseModule,
     UpdateCourseModule
+
   ],
 })
 export class CoursesModule {}

@@ -1,18 +1,46 @@
 .detail {
-    max-width: 490px;
+    width: 70%;
     margin: 30px auto 0 auto;
     border: 1px solid lightgray;
-    height: 250px;
+    min-height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 46px;
-    h1 {
-        font-weight: bold;
-        font-size: 34px;
+    position: relative;
+    &-template {
+        h1 {
+            font-weight: bold;
+            font-size: 44px;
+        }
+        h2 {
+            font-weight: bold;
+            font-size: 34px;
+            padding: 8px 0;
+            margin: 36px 0;
+        }
+        p {
+            line-height: 32px;
+            font-size: 16px;
+        }
+        button {
+            position: absolute;
+            bottom: 20px;
+        }
     }
-    p {
-        line-height: 32px;
-        font-size: 16px;
+    .error {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        button {
+            width: 60%;
+            margin: 16px auto 0 auto;
+        }
     }
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

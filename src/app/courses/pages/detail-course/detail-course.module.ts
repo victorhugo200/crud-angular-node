@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DetailCourseComponent } from './detail-course.component';
 import { AppMaterialModule } from 'src/app/shared/app-material/app-material.module';
 import { RouterModule } from '@angular/router';
+import { ComponentsModule } from 'src/app/shared/components/components.module';
 
 
 
@@ -11,7 +12,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     RouterModule,
-    AppMaterialModule
+    AppMaterialModule,
+    ComponentsModule
   ]
 })
 export class DetailCourseModule { }
