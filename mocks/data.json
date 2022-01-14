@@ -1,0 +1,43 @@
+[{
+        "_id": "1",
+        "category": "front-end",
+        "name": "Angular",
+        "description": "lorem ipsum dolor, sit amet consectetur adipisicing elit."
+    },
+    {
+        "_id": "2",
+        "category": "front-end",
+        "name": "Vue",
+        "description": "lorem ipsum dolor, sit amet consectetur adipisicing elit."
+    },
+    {
+        "_id": "3",
+        "category": "front-end",
+        "name": "ReactJs",
+        "description": "lorem ipsum dolor, sit amet consectetur adipisicing elit."
+    },
+    {
+        "_id": "4",
+        "category": "back-end",
+        "name": "NodeJs",
+        "description": "lorem ipsum dolor, sit amet consectetur adipisicing elit."
+    },
+    {
+        "_id": "5",
+        "category": "android",
+        "name": "Flutter",
+        "description": "lorem ipsum dolor, sit amet consectetur adipisicing elit."
+    },
+    {
+        "_id": "6",
+        "category": "android",
+        "name": "React Native",
+        "description": "lorem ipsum dolor, sit amet consectetur adipisicing elit."
+    },
+    {
+        "_id": "7",
+        "category": "back-end",
+        "name": "Java",
+        "description": "lorem ipsum dolor, sit amet consectetur adipisicing elit."
+    }
+]

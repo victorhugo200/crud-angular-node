@@ -8,7 +8,7 @@
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "server": "json-server mocks/db.json --middlewares ./server.js",
+        "server": "nodemon mocks/server.js",
         "start:all": "concurrently \"npm run start\" \"npm run server\""
     },
     "private": true,
@@ -23,7 +23,11 @@
         "@angular/platform-browser": "~11.0.0",
         "@angular/platform-browser-dynamic": "~11.0.0",
         "@angular/router": "~11.0.0",
+        "body-parser": "^1.19.1",
         "concurrently": "^7.0.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.2",
+        "nodemon": "^2.0.15",
         "rxjs": "~6.6.0",
         "tslib": "^2.0.0",
         "zone.js": "~0.10.2"
